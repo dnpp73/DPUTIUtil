@@ -2,7 +2,7 @@ DPUTIUtil
 =================
   
 ### Dependency  
-なし  
+None  
   
 ### Require Framework  
 - `MobileCoreServices.framework` (iOS)  
