@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode7.1
+xcode_project: DPUTIUtil.xcodeproj
+
+before_install:
+  - gem install cocoapods xcpretty --no-ri --no-rdoc
+  - xcodebuild clean -project DPUTIUtil.xcodeproj -target DPUTIUtil-iOS -configuration Release -sdk iphonesimulator | xcpretty
+  - xcodebuild clean -project DPUTIUtil.xcodeproj -target DPUTIUtil-OSX -configuration Release -sdk macosx | xcpretty
+
+script:
+  - pod lib lint
+  - xcodebuild -project DPUTIUtil.xcodeproj -target DPUTIUtil-iOS -configuration Release -sdk iphonesimulator | xcpretty
+  - xcodebuild -project DPUTIUtil.xcodeproj -target DPUTIUtil-OSX -configuration Release -sdk macosx | xcpretty
