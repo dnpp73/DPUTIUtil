@@ -4,10 +4,11 @@ xcode_project: DPUTIUtil.xcodeproj
 
 before_install:
   - gem install cocoapods xcpretty --no-ri --no-rdoc
-  - xcodebuild clean -project DPUTIUtil.xcodeproj -target DPUTIUtil-iOS -configuration Release -sdk iphonesimulator | xcpretty
-  - xcodebuild clean -project DPUTIUtil.xcodeproj -target DPUTIUtil-OSX -configuration Release -sdk macosx | xcpretty
+  - set -o pipefail
+  - xcodebuild clean -project DPUTIUtil.xcodeproj -scheme DPUTIUtil-iOS -sdk iphonesimulator | xcpretty -c
+  - xcodebuild clean -project DPUTIUtil.xcodeproj -scheme DPUTIUtil-OSX -sdk macosx | xcpretty -c
 
 script:
   - pod lib lint
-  - xcodebuild -project DPUTIUtil.xcodeproj -target DPUTIUtil-iOS -configuration Release -sdk iphonesimulator | xcpretty
-  - xcodebuild -project DPUTIUtil.xcodeproj -target DPUTIUtil-OSX -configuration Release -sdk macosx | xcpretty
+  - xcodebuild -project DPUTIUtil.xcodeproj -scheme DPUTIUtil-iOS -sdk iphonesimulator | xcpretty -c
+  - xcodebuild -project DPUTIUtil.xcodeproj -scheme DPUTIUtil-OSX -sdk macosx | xcpretty -c

@@ -14,8 +14,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA5C32111C11A8EC006C1EFD /* DPUTIUtil_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPUTIUtil_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA5C321F1C11A929006C1EFD /* DPUTIUtil_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPUTIUtil_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5C32111C11A8EC006C1EFD /* DPUTIUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPUTIUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5C321F1C11A929006C1EFD /* DPUTIUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DPUTIUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5C322A1C11A9EA006C1EFD /* DPUTIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUTIUtil.h; sourceTree = "<group>"; };
 		EA5C322B1C11A9EA006C1EFD /* DPUTIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUTIUtil.m; sourceTree = "<group>"; };
 		EA5C322C1C11A9EA006C1EFD /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 		EA5C32121C11A8EC006C1EFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA5C32111C11A8EC006C1EFD /* DPUTIUtil_iOS.framework */,
-				EA5C321F1C11A929006C1EFD /* DPUTIUtil_OSX.framework */,
+				EA5C32111C11A8EC006C1EFD /* DPUTIUtil.framework */,
+				EA5C321F1C11A929006C1EFD /* DPUTIUtil.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 			);
 			name = "DPUTIUtil-iOS";
 			productName = "DPUTIUtil-iOS";
-			productReference = EA5C32111C11A8EC006C1EFD /* DPUTIUtil_iOS.framework */;
+			productReference = EA5C32111C11A8EC006C1EFD /* DPUTIUtil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA5C321E1C11A929006C1EFD /* DPUTIUtil-OSX */ = {
@@ -123,7 +123,7 @@
 			);
 			name = "DPUTIUtil-OSX";
 			productName = "DPUTIUtil-OSX";
-			productReference = EA5C321F1C11A929006C1EFD /* DPUTIUtil_OSX.framework */;
+			productReference = EA5C321F1C11A929006C1EFD /* DPUTIUtil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -204,6 +204,7 @@
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(PROJECT_NAME:c99extidentifier)";
 			};
 			name = Debug;
 		};
@@ -212,6 +213,7 @@
 			buildSettings = {
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(PROJECT_NAME:c99extidentifier)";
 			};
 			name = Release;
 		};
@@ -259,8 +261,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.dnpp.DPUTIUtil-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnpp.DPUTIUtil;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,8 +308,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.dnpp.DPUTIUtil-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnpp.DPUTIUtil;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -364,8 +364,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.dnpp.DPUTIUtil-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnpp.DPUTIUtil;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -413,8 +412,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.dnpp.DPUTIUtil-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnpp.DPUTIUtil;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";

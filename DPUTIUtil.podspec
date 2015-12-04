@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "DPUTIUtil"
-  s.version               = "0.1.1"
+  s.version               = "1.0"
   s.summary               = "Convert MIMEType <-> UTI <-> pathExtension"
   s.author                = { "Yusuke SUGAMIYA" => "yusuke.dnpp@gmail.com" }
   s.homepage              = "https://github.com/dnpp73/DPUTIUtil"
