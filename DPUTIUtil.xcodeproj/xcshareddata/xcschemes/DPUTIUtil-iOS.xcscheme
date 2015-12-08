@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA5C32101C11A8EC006C1EFD"
-               BuildableName = "DPUTIUtil_iOS.framework"
+               BuildableName = "DPUTIUtil.framework"
                BlueprintName = "DPUTIUtil-iOS"
                ReferencedContainer = "container:DPUTIUtil.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA5C32101C11A8EC006C1EFD"
-            BuildableName = "DPUTIUtil_iOS.framework"
+            BuildableName = "DPUTIUtil.framework"
             BlueprintName = "DPUTIUtil-iOS"
             ReferencedContainer = "container:DPUTIUtil.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA5C32101C11A8EC006C1EFD"
-            BuildableName = "DPUTIUtil_iOS.framework"
+            BuildableName = "DPUTIUtil.framework"
             BlueprintName = "DPUTIUtil-iOS"
             ReferencedContainer = "container:DPUTIUtil.xcodeproj">
          </BuildableReference>
